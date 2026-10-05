@@ -57,7 +57,7 @@ footer a { color: inherit }
 
   <h2>2. Qué datos tratamos</h2>
   <ul>
-    <li><b>De los usuarios</b> (médicos, personal de laboratorio y pacientes con cuenta): nombre, correo electrónico, celular, contraseña (guardada solo como una huella que no se puede revertir), matrícula profesional en el caso de los médicos, foto de perfil si la sube, y registros técnicos de uso.</li>
+    <li><b>De los usuarios</b> (médicos, personal de laboratorio y pacientes con cuenta): nombre, correo electrónico, celular, contraseña (guardada solo como una huella que no se puede revertir), matrícula profesional en el caso de los médicos, foto de perfil en el caso de los médicos que la suben, y registros técnicos de uso.</li>
     <li><b>De los pacientes</b>, cuando los registra su médico o su laboratorio: nombre, documento de identidad, fecha de nacimiento, sexo, datos de contacto y la información clínica que registra el profesional (consultas, diagnósticos, recetas, órdenes y resultados de estudios).</li>
     <li><b>De quien visita quantt.lat:</b> la página no tiene formularios ni cookies propias. Si nos escribes por correo o por WhatsApp, recibimos tu mensaje y tus datos de contacto.</li>
   </ul>
@@ -66,32 +66,32 @@ footer a { color: inherit }
   <p>Solo para prestar el servicio: que el médico lleve la historia clínica, que una orden llegue al laboratorio elegido y el resultado vuelva a la ficha, que cada usuario pueda entrar a su cuenta y recuperarla, para mantener la seguridad del sistema y para responder a quien nos escribe. No vendemos datos personales ni los cedemos a otros para sus propios fines.</p>
 
   <h2>4. Inteligencia artificial</h2>
-  <p>Evidenttia, el asistente de Quantt.Med, trabaja solo cuando el médico se lo pide. En ese momento, los datos de la consulta que necesita se envían a Anthropic (para el texto) y a OpenAI (para pasar a texto el audio de la consulta), en Estados Unidos. Nada de lo que Evidenttia propone entra en la historia clínica sin que el médico lo confirme.</p>
-  <p>Quantt no usa los datos de los pacientes para entrenar inteligencia artificial. Anthropic y OpenAI tampoco los usan para entrenar sus modelos: así lo establecen sus condiciones para empresas.</p>
+  <p>Evidenttia, el asistente de Quantt.Med, todavía no procesa datos de pacientes. Cuando lo haga, trabajará solo cuando el médico se lo pida: en ese momento, los datos de la consulta que necesite se enviarán a Anthropic (para el texto) y a OpenAI (para pasar a texto el audio de la consulta), en Estados Unidos, y nada de lo que proponga entrará en la historia clínica sin que el médico lo confirme.</p>
+  <p>Quantt no usa los datos de los pacientes para entrenar inteligencia artificial. Anthropic y OpenAI tampoco los usarán para entrenar sus modelos: así lo establecen sus condiciones para empresas.</p>
 
   <h2>5. Con quién se comparten</h2>
   <p>Entre profesionales, solo cuando la atención lo requiere: por ejemplo, un laboratorio recibe los datos necesarios para procesar la orden que el médico le envió.</p>
   <p>Además usamos proveedores que actúan por cuenta nuestra y bajo obligaciones de confidencialidad:</p>
   <ul>
     <li><b>DigitalOcean</b> (servidores en San Francisco, Estados Unidos): aloja la aplicación, la base de datos y los archivos, como los logos del membrete y las fotos de perfil.</li>
-    <li><b>Amazon Web Services</b> (Estados Unidos): cifrado de los datos. Para poder buscar sin descifrar, recibe el correo, el celular y el número de documento y devuelve una clave de búsqueda cifrada. También es el servicio de respaldo para los correos de cuenta.</li>
+    <li><b>Amazon Web Services</b> (Estados Unidos): cifrado de los datos. Para poder buscar sin descifrar, recibe el correo, el celular y el número de documento y devuelve una huella con clave, que permite encontrar un registro sin descifrar los datos. También es el servicio de respaldo para los correos de cuenta.</li>
     <li><b>Resend</b> (servidores en São Paulo, Brasil): envía los correos de la cuenta. Recibe la dirección de correo y el texto del aviso, nunca información clínica.</li>
-    <li><b>Anthropic y OpenAI</b> (Estados Unidos): solo cuando el médico usa Evidenttia (punto 4).</li>
-    <li><b>Quien recibe tus mensajes:</b> el correo de contacto llega a un buzón de Microsoft Outlook, y WhatsApp es un servicio de Meta.</li>
+    <li><b>Anthropic y OpenAI</b> (Estados Unidos): solo cuando el médico use Evidenttia (punto 4).</li>
+    <li><b>Quien recibe tus mensajes:</b> el correo de contacto se reenvía, a través de Namecheap (nuestro proveedor de dominio), a un buzón de Microsoft Outlook, y WhatsApp es un servicio de Meta.</li>
     <li><b>La página quantt.lat</b> está alojada en GitHub Pages y carga sus tipografías desde Google Fonts. Como cualquier servidor web, GitHub y Google reciben datos técnicos de la visita, como la dirección IP.</li>
   </ul>
   <p>Podemos entregar datos a una autoridad solo cuando la ley boliviana lo exija.</p>
 
   <h2>6. Cómo los protegemos</h2>
-  <p>Toda la comunicación viaja cifrada. Los datos de identidad de los pacientes se guardan cifrados. Cada médico accede solo a sus pacientes, y la base de datos aplica esa separación por sí misma. Los registros clínicos cerrados no se pueden alterar: una corrección se agrega como un registro nuevo, con su autor y su fecha. Las acciones sobre los datos de identidad de los pacientes quedan registradas.</p>
+  <p>La comunicación entre tu navegador y Quantt, y entre la aplicación y la base de datos, viaja cifrada. Los datos de identidad de los pacientes se guardan cifrados. Cada médico accede solo a sus pacientes, y la base de datos aplica esa separación por sí misma. Los registros clínicos cerrados no se pueden alterar: una corrección se agrega como un registro nuevo, con su autor y su fecha. Cada vez que alguien lee los datos de identidad de un paciente, queda registrado quién, cuándo, qué datos y para qué.</p>
 
   <h2>7. Cuánto tiempo los guardamos</h2>
   <ul>
     <li>Los datos de la cuenta y las historias clínicas, mientras la cuenta del médico o del laboratorio esté activa, y después por el tiempo que exija la normativa sobre historias clínicas.</li>
-    <li>Si una cuenta se cierra, el profesional tiene un plazo para descargar sus historias antes de que se eliminen.</li>
+    <li>Si una cuenta se cierra, el profesional tiene 30 días para descargar sus historias, en modo de solo lectura.</li>
     <li>La base de datos tiene copias de respaldo que permiten volver a cualquier momento de los últimos 7 días.</li>
-    <li>Los registros de las acciones sobre datos de identidad se guardan sin plazo de borrado, para poder auditar quién hizo qué.</li>
-    <li>Una foto de perfil se borra cuando el médico la quita o la cambia.</li>
+    <li>El registro de las lecturas de los datos de identidad se guarda sin plazo de borrado, para poder auditarlas.</li>
+    <li>Una foto de perfil se borra cuando el médico la quita o la cambia. Si en ese momento falla el almacenamiento, el sistema vuelve a intentarlo durante 7 días.</li>
   </ul>
 
   <h2>8. Tus derechos</h2>
