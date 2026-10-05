@@ -3,64 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad — Quantt</title>
-<meta name="description" content="Cómo Quantt trata los datos personales de médicos, personal de laboratorio y pacientes.">
+<title>Política de privacidad · Quantt</title>
+<meta name="description" content="Qué datos personales trata Quantt, para qué, con quién los comparte y qué derechos tiene cada persona.">
+<link rel="canonical" href="https://quantt.lat/privacidad.html">
+<meta name="theme-color" content="#161512">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
 <style>
-  :root{--violeta:#6B4FE8;--tinta:#1A1915;--gris:#6B6860;--fondo:#F7F5F1;--linea:#E4E0D8}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65}
-  .envoltura{max-width:760px;margin:0 auto;padding:0 20px}
-  header{padding:24px 0;border-bottom:1px solid var(--linea);background:#fff}
-  .marca{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px;text-decoration:none;color:var(--tinta)}
-  .logo{width:32px;height:32px;border-radius:8px;background:var(--violeta);color:#fff;display:grid;place-items:center}
-  h1{font-size:30px;margin:40px 0 4px}
-  h2{font-size:19px;margin:32px 0 6px}
-  .fecha{color:var(--gris);font-size:14px}
-  a{color:var(--violeta)}
-  footer{margin-top:56px;padding:24px 0;border-top:1px solid var(--linea);color:var(--gris);font-size:14px;background:#fff}
+:root { --fondo: #161512; --sup: #22201B; --linea: #3A372F; --texto: #F4F2EC; --suave: #B4B0A6; --acento: #A797F7; color-scheme: dark }
+* { box-sizing: border-box }
+html, body { margin: 0 }
+body { background: var(--fondo); color: var(--texto); font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif; font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased }
+.barra { max-width: 760px; margin: 0 auto; padding: 22px 16px; display: flex; justify-content: space-between; align-items: center }
+.barra a { color: var(--texto); text-decoration: none; font-weight: 700; font-size: 15px }
+.barra a.volver { color: var(--suave); font-weight: 600 }
+.barra a.volver:hover { color: var(--texto) }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px }
+h1 { font-size: clamp(32px, 7vw, 44px); line-height: 1.1; letter-spacing: -.025em; margin: 0 0 10px }
+.fecha { color: var(--suave); font-size: 15px; margin: 0 0 28px }
+h2 { font-size: 20px; letter-spacing: -.01em; margin: 40px 0 10px; padding-top: 22px; border-top: 1px solid var(--linea) }
+p, ul { margin: 0 0 14px; max-width: 68ch }
+ul { padding-left: 20px }
+li { margin-bottom: 8px }
+li::marker { color: var(--acento) }
+b { font-weight: 700 }
+a { color: var(--acento) }
+.resumen { background: var(--sup); border-radius: 14px; padding: 18px 20px; margin: 0 0 8px }
+.resumen p { margin: 0 }
+footer { max-width: 760px; margin: 0 auto; padding: 18px 16px 40px; border-top: 1px solid var(--linea); color: var(--suave); font-size: 13px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px }
+footer a { color: inherit }
 </style>
 </head>
 <body>
-<header><div class="envoltura"><a class="marca" href="index.html"><span class="logo">Q</span>Quantt</a></div></header>
+<header class="barra">
+  <a href="./">Quantt</a>
+  <a href="./" class="volver">← Volver al inicio</a>
+</header>
 
-<main class="envoltura">
+<main>
   <h1>Política de privacidad</h1>
-  <p class="fecha">Vigente desde el 26 de septiembre de 2026.</p>
+  <p class="fecha">Actualizada el 5 de octubre de 2026.</p>
 
-  <p>Esta política explica qué datos personales trata Quantt, para qué, con quién los comparte y qué derechos tiene cada persona. Quantt es una plataforma de software con sede en Sucre, Bolivia, que ofrece historia clínica electrónica a médicos (Quantt.Med), un sistema para laboratorios clínicos (Quantt.Lab) y un espacio para pacientes (Quantt.Me).</p>
+  <div class="resumen">
+    <p>En pocas palabras: tratamos los datos solo para prestar el servicio, no los vendemos, los guardamos cifrados y no los usamos para entrenar inteligencia artificial.</p>
+  </div>
 
-  <h2>1. Quién decide sobre los datos</h2>
-  <p>La historia clínica pertenece a la relación entre el médico y su paciente. El médico decide qué registra y es responsable de esa información frente a su paciente y a la normativa boliviana aplicable, incluido el secreto profesional. Quantt guarda y procesa esos datos por cuenta del médico o del laboratorio, solo para prestarles el servicio. Para los datos de la propia cuenta de cada usuario (nombre, correo, celular, matrícula profesional), Quantt es responsable directo.</p>
+  <h2>1. Quién es responsable</h2>
+  <p>Quantt es una plataforma de software de Quantt.Bol SRL, en Bolivia (en esta política, «Quantt»). Ofrece una historia clínica electrónica para médicos (Quantt.Med), un sistema para laboratorios clínicos (Quantt.Lab) y un espacio para pacientes (Quantt.Me).</p>
+  <p>La historia clínica pertenece a la relación entre el médico y su paciente. El médico decide qué registra y responde por esa información ante su paciente y ante la normativa boliviana, incluido el secreto profesional. Quantt guarda y procesa esos datos por cuenta del médico o del laboratorio, solo para prestarles el servicio. De los datos de la cuenta de cada usuario (nombre, correo, celular, matrícula profesional), Quantt es responsable directo.</p>
 
   <h2>2. Qué datos tratamos</h2>
-  <p><strong>De los usuarios</strong> (médicos, personal de laboratorio y pacientes con cuenta): nombre, correo electrónico, celular, contraseña (guardada solo como huella irreversible), matrícula profesional en el caso de médicos, y registros de acceso.</p>
-  <p><strong>De los pacientes</strong>, cuando los registra su médico o su laboratorio: nombre, documento de identidad, fecha de nacimiento, sexo, datos de contacto, y la información clínica que el profesional registra (consultas, diagnósticos, recetas, órdenes y resultados de estudios).</p>
+  <ul>
+    <li><b>De los usuarios</b> (médicos, personal de laboratorio y pacientes con cuenta): nombre, correo electrónico, celular, contraseña (guardada solo como una huella que no se puede revertir), matrícula profesional en el caso de los médicos, foto de perfil en el caso de los médicos que la suben, y registros técnicos de uso.</li>
+    <li><b>De los pacientes</b>, cuando los registra su médico o su laboratorio: nombre, documento de identidad, fecha de nacimiento, sexo, datos de contacto y la información clínica que registra el profesional (consultas, diagnósticos, recetas, órdenes y resultados de estudios).</li>
+    <li><b>De quien visita quantt.lat:</b> la página no tiene formularios ni cookies propias. Si nos escribes por correo o por WhatsApp, recibimos tu mensaje y tus datos de contacto.</li>
+  </ul>
 
   <h2>3. Para qué los usamos</h2>
-  <p>Solo para prestar el servicio: que el médico lleve la historia clínica, que una orden llegue al laboratorio elegido y el resultado vuelva a la ficha, que cada usuario pueda entrar a su cuenta y recuperarla, y para mantener la seguridad del sistema. No vendemos datos personales ni los cedemos a terceros para sus propios fines.</p>
+  <p>Solo para prestar el servicio: que el médico lleve la historia clínica, que una orden llegue al laboratorio elegido y el resultado vuelva a la ficha, que cada usuario pueda entrar a su cuenta y recuperarla, para mantener la seguridad del sistema y para responder a quien nos escribe. No vendemos datos personales ni los cedemos a otros para sus propios fines.</p>
 
-  <h2>4. Con quién se comparten</h2>
-  <p>Entre profesionales, solo cuando la atención lo requiere: por ejemplo, un laboratorio recibe los datos necesarios para procesar la orden que el médico le envió. Además usamos proveedores de infraestructura que actúan por cuenta nuestra y bajo obligaciones de confidencialidad: alojamiento de servidores y bases de datos (DigitalOcean, en Estados Unidos), servicios de cifrado y de envío de correos de cuenta (Amazon Web Services, en Estados Unidos). Podemos entregar datos a una autoridad solo cuando la ley boliviana lo exija.</p>
+  <h2>4. Inteligencia artificial</h2>
+  <p>Evidenttia, el asistente de Quantt.Med, todavía no procesa datos de pacientes. Cuando lo haga, trabajará solo cuando el médico se lo pida: en ese momento, los datos de la consulta que necesite se enviarán a Anthropic (para el texto) y a OpenAI (para pasar a texto el audio de la consulta), en Estados Unidos, y nada de lo que proponga entrará en la historia clínica sin que el médico lo confirme.</p>
+  <p>Quantt no usa los datos de los pacientes para entrenar inteligencia artificial. Anthropic y OpenAI tampoco los usarán para entrenar sus modelos: así lo establecen sus condiciones para empresas.</p>
 
-  <h2>5. Cómo los protegemos</h2>
-  <p>Toda la comunicación viaja cifrada. Los datos de identidad de los pacientes se guardan cifrados. Cada médico accede solo a sus pacientes, la base de datos aplica esa separación por sí misma, y los registros clínicos cerrados no se pueden alterar: una corrección se agrega como un registro nuevo. Los accesos quedan registrados.</p>
+  <h2>5. Con quién se comparten</h2>
+  <p>Entre profesionales, solo cuando la atención lo requiere: por ejemplo, un laboratorio recibe los datos necesarios para procesar la orden que el médico le envió.</p>
+  <p>Además usamos proveedores que actúan por cuenta nuestra y bajo obligaciones de confidencialidad:</p>
+  <ul>
+    <li><b>DigitalOcean</b> (servidores en San Francisco, Estados Unidos): aloja la aplicación, la base de datos y los archivos, como los logos del membrete y las fotos de perfil.</li>
+    <li><b>Amazon Web Services</b> (Estados Unidos): cifrado de los datos. Para poder buscar sin descifrar, recibe el correo, el celular y el número de documento y devuelve una huella con clave, que permite encontrar un registro sin descifrar los datos. También es el servicio de respaldo para los correos de cuenta.</li>
+    <li><b>Resend</b> (servidores en São Paulo, Brasil): envía los correos de la cuenta. Recibe la dirección de correo y el texto del aviso, nunca información clínica.</li>
+    <li><b>Anthropic y OpenAI</b> (Estados Unidos): solo cuando el médico use Evidenttia (punto 4).</li>
+    <li><b>Quien recibe tus mensajes:</b> el correo de contacto se reenvía, a través de Namecheap (nuestro proveedor de dominio), a un buzón de Microsoft Outlook, y WhatsApp es un servicio de Meta.</li>
+    <li><b>La página quantt.lat</b> está alojada en GitHub Pages y carga sus tipografías desde Google Fonts. Como cualquier servidor web, GitHub y Google reciben datos técnicos de la visita, como la dirección IP.</li>
+  </ul>
+  <p>Podemos entregar datos a una autoridad solo cuando la ley boliviana lo exija.</p>
 
-  <h2>6. Cuánto tiempo los guardamos</h2>
-  <p>Mientras la cuenta del médico o del laboratorio esté activa, y después por el tiempo que exija la normativa sobre historias clínicas. Si una cuenta se cierra, el profesional tiene un plazo para descargar sus historias antes de que se eliminen.</p>
+  <h2>6. Cómo los protegemos</h2>
+  <p>La comunicación entre tu navegador y Quantt, y entre la aplicación y la base de datos, viaja cifrada. Los datos de identidad de los pacientes se guardan cifrados. Cada médico accede solo a sus pacientes, y la base de datos aplica esa separación por sí misma. Los registros clínicos cerrados no se pueden alterar: una corrección se agrega como un registro nuevo, con su autor y su fecha. Cada vez que una persona consulta los datos de identidad de un paciente, queda registrado quién, cuándo y para qué.</p>
 
-  <h2>7. Sus derechos</h2>
-  <p>Cualquier persona puede pedir acceder a sus datos, corregirlos, o solicitar que se eliminen o dejen de tratarse cuando corresponda. Si usted es paciente, su historia clínica la administra su médico: le ayudaremos a hacerle llegar su pedido. Escriba a <a href="mailto:contacto@quantt.lat">contacto@quantt.lat</a> y le responderemos en un plazo razonable.</p>
+  <h2>7. Cuánto tiempo los guardamos</h2>
+  <ul>
+    <li>Los datos de la cuenta y las historias clínicas, mientras la cuenta del médico o del laboratorio esté activa, y después por el tiempo que exija la normativa sobre historias clínicas.</li>
+    <li>Cuando termina la prueba gratis o el plan vence sin renovarse, el profesional tiene 30 días para descargar sus historias, en modo de solo lectura.</li>
+    <li>La base de datos tiene copias de respaldo que permiten volver a cualquier momento de los últimos 7 días.</li>
+    <li>El registro de las consultas a los datos de identidad se guarda sin plazo de borrado, para poder auditarlas.</li>
+    <li>Una foto de perfil se borra cuando el médico la quita o la cambia. Si en ese momento falla el almacenamiento, el sistema vuelve a intentarlo durante 7 días.</li>
+  </ul>
 
-  <h2>8. Correos que enviamos</h2>
-  <p>Solo enviamos correos de seguridad de la propia cuenta (cuenta creada, recuperación de contraseña, avisos de seguridad) a quien registró esa cuenta. Nunca enviamos información clínica por correo.</p>
+  <h2>8. Tus derechos</h2>
+  <p>Cualquier persona puede pedir acceder a sus datos, corregirlos, o solicitar que se eliminen o dejen de tratarse cuando corresponda. Si eres paciente, tu historia clínica la administra tu médico: te ayudamos a hacerle llegar tu pedido. Escríbenos a <a href="mailto:contacto@quantt.lat">contacto@quantt.lat</a>.</p>
 
-  <h2>9. Cambios</h2>
-  <p>Si esta política cambia, publicaremos la nueva versión en esta página con su fecha.</p>
+  <h2>9. Correos que enviamos</h2>
+  <p>Solo enviamos correos de la propia cuenta (cuenta creada, recuperación de contraseña, contraseña cambiada, avisos de seguridad) a quien registró esa cuenta. Nunca enviamos información clínica por correo.</p>
 
-  <h2>10. Contacto</h2>
-  <p><a href="mailto:contacto@quantt.lat">contacto@quantt.lat</a> · Sucre, Bolivia.</p>
+  <h2>10. Cambios</h2>
+  <p>Si esta política cambia, publicamos la versión nueva en esta página, con su fecha.</p>
+
+  <h2>11. Contacto</h2>
+  <p><a href="mailto:contacto@quantt.lat">contacto@quantt.lat</a> · Bolivia.</p>
 </main>
 
-<footer><div class="envoltura">© 2026 Quantt · <a href="index.html">Inicio</a></div></footer>
+<footer>
+  <p>© 2026 Quantt.Bol SRL. Bolivia.</p>
+  <p><a href="./">Volver al inicio</a></p>
+</footer>
 </body>
 </html>
